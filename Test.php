@@ -6,14 +6,11 @@
  * Time: 11:24
  */
 
-namespace JanPosolda;
-
-
 class MyClassTest extends \PHPUnit_Framework_TestCase
 {
 	public function testMyClass()
 	{
-		$myClass = new MyClass();
+		$myClass = new \JanPosolda\MyClass();
 		$this->assertEquals($myClass->getOneNumber(), 1);
 	}
 }
