@@ -8,11 +8,11 @@
 
 namespace JanPosolda;
 
-
-class Test extends PHPUnit_Framework_TestCase
+class Test
 {
-	public function testMyClass() {
+	public function testMyClass()
+	{
 		$myClass = new MyClass();
-		$this->assertEquals($myClass->getOneNumber(), 1);
+		assert($myClass->getOneNumber(), 1);
 	}
 }
