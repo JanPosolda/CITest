@@ -5,3 +5,9 @@ machine:
 test:
   override:
     - phpunit Test.php
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - bundle exec cap production deploy
