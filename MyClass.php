@@ -15,6 +15,5 @@ class MyClass
 	public function getOneNumber()
 	{
 		return 1;
-
 	}
 }
