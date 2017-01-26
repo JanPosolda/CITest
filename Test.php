@@ -3,17 +3,16 @@
  * Created by PhpStorm.
  * User: Jan Posolda
  * Date: 26.01.2017
- * Time: 11:09
+ * Time: 11:24
  */
 
 namespace JanPosolda;
 
 
-class Test
+class Test extends PHPUnit_Framework_TestCase
 {
-
-	public function getOneNumber()
-	{
-		return 1;
+	public function testMyClass() {
+		$myClass = new MyClass();
+		$this->assertEquals($myClass->getOneNumber(), 1);
 	}
 }
