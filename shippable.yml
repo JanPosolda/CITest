@@ -1,14 +1,10 @@
-machine:
-  php:
-    version: 7.0.4
+language: php
 
-test:
-  override:
-    - phpunit Test.php
+php:
+  - 5.4
 
-deployment:
-  production:
-    branch: master
-    commands:
-      - chmod +x deploy_prod.sh
-      - ./deploy_prod.sh
+script:
+ - phpunit Test.php
+
+notifications:
+  email: false
