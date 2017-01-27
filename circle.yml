@@ -10,4 +10,4 @@ deployment:
   production:
     branch: master
     commands:
-      - ./deploy_prod.sh
+      - sh ./deploy_prod.sh
