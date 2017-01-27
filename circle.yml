@@ -10,4 +10,5 @@ deployment:
   production:
     branch: master
     commands:
-      - bundle exec cap production deploy
+      - ssh posolda@31.31.74.179 -p 2222
+      - git pull origin master
