@@ -1,0 +1,14 @@
+machine:
+  php:
+    version: 7.0.4
+
+test:
+  override:
+    - phpunit Test.php
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - chmod +x deploy_prod.sh
+      - ./deploy_prod.sh
