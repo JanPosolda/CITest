@@ -10,5 +10,5 @@ deployment:
   production:
     branch: master
     commands:
-      - su chmod +x deploy_prod.sh
+      - chmod +x deploy_prod.sh
       - ./deploy_prod.sh
